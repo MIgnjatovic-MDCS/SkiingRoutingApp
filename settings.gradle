@@ -1,0 +1,15 @@
+include ':app'
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        maven {
+            url "https://microsoftmaps.jfrog.io/artifactory/Maven/"
+        }// Warning: this repository is going to shut down soon
+    }
+}
+rootProject.name = "Skymap"
+
+
